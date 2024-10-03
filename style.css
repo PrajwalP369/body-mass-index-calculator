@@ -1,0 +1,219 @@
+body {
+    /* background-color: #f0f0f0; */
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* background-color: white; */
+    background-image: url(https://media.musclewiki.com/media/uploads/workout_different_equipment.jpg);
+    background-size: cover;
+  }
+
+  /* BMI Calculator Box */
+  .bmi-calculator {
+    width: 400px;
+    height: 660px;
+    position: absolute;
+    left: 63.5%;
+    top: 70px;
+  
+    /* Set the background with gradient and image */
+    background: 
+      linear-gradient(135deg, rgb(74, 74, 74), rgb(210, 156, 55)), /* Gradient layer */
+      url(https://pngimg.com/uploads/powerlifting/powerlifting_PNG4.png); /* Image layer */
+  
+    background-size: cover, 350px 450px; /* Gradient covers entire div, image at specified size */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+  
+    /* Blend mode to mix gradient with image */
+    background-blend-mode: multiply; /* Blend the gradient and image */
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    color: black;
+    overflow: hidden;
+  }
+  
+  
+  .bmi-calculator label{
+    color: rgb(248, 245, 245);
+  }
+  .bmi-calculator:hover{
+    background: linear-gradient(135deg, rgb(210, 156, 55),rgb(66, 65, 65)),url(https://pngimg.com/uploads/powerlifting/powerlifting_PNG4.png); /* Image layer */
+  
+    background-size: cover, 350px 450px; /* Gradient covers entire div, image at specified size */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+  
+    /* Blend mode to mix gradient with image */
+    background-blend-mode: multiply; /* Blend the gradient and image */
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    color: black;
+    overflow: hidden;
+  }
+  .form-control:hover{
+    background-color: rgba(245, 245, 243, 0.762);
+  }
+/* #malesym{
+position: absolute;
+top: 212px;
+left: 50px;
+font-size: 30px;
+}
+.malerad{
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+}
+#femalesym{
+  position: absolute;
+  top: 210px;
+  left: 112px;
+  font-size: 60px;
+  }
+.femalerad{
+  margin-left: 50px;
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+} */
+.form-label{
+  margin-top: 5px;
+}
+.malerad{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+.genfem{
+  margin-left: 35px;
+}
+  .bmi-calculator h2 {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: #e0e0e0;
+  }
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.337);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.736);
+    box-shadow: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #ff3b2f;
+  }
+
+  .result-box {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  /* Button hover effects */
+  .btn-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .highlight{
+    color: gold;
+    font-weight: bold;
+  }
+
+  .meter-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 100px;
+    background-image: url('https://static.toiimg.com/photo/59645926.cms'); /* Meter background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .pointer {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 43%;
+    left: 39%; /* Adjust this based on the meter image */
+    /* transform-origin: 50% 100%; Rotate from the bottom center */
+    transition: transform 0.5s ease-out;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25435.png'); /* Pointer/Needle image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+  }
+.blank{
+  height: 20px;
+  width: 544px;
+  background-color: black;
+  position: absolute;
+  left: 5.5%;
+  top: 75%;
+}
+  .result-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+#navbar {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231016/pngtree-vibrant-wall-texture-a-decorative-paint-of-blue-red-and-black-image_13650796.png);
+  background-size: cover;
+}
+#navbmi{
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+.weightlift{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  height: 400px;
+  width: 400px;
+  opacity: 0.5;
+}
